@@ -1,4 +1,6 @@
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
+
+
 import Home from "./pages/Home.jsx"
 import Destination from "./pages/Destination.jsx"
 import Crew from "./pages/Crew.jsx"
@@ -21,6 +23,7 @@ function App() {
         <Route path="/technology" element={<Technology/>}/>
         </Route>
       </Routes>
+          <footer>JDJD Codes</footer>
     </BrowserRouter>
    
      
