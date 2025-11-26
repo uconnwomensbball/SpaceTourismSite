@@ -1,0 +1,67 @@
+/* GENERAL */
+*{
+    box-sizing: border-box;
+}
+
+
+
+a{
+    text-decoration: none;
+} 
+
+button{
+    cursor: pointer; 
+}
+
+/*NAV BARS*/
+.main-nav-bar-div{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* PAGES */
+
+/* 00 HOME */
+.home-div{
+    background-image: url("./assets/home/background-home-desktop.jpg");
+    height: 100vh;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+
+/*01 DESTINATION*/
+.destination-div{
+    background-image: url("./assets/destination/background-destination-desktop.jpg");
+    height: 100vh;
+
+}
+
+/*01 DESTINATION*/
+.crew-div{
+    background-image: url("./assets/crew/background-crew-desktop.jpg"); 
+    height: 100vh;   
+}
+
+/* FONTS */
+
+/* MISC */
+.white-text{
+    color: #FFFFFF;
+}
+
+.light-blue-text{
+    color: #D0D6F9; 
+}
+
+.dark-blue-text{
+    color: #0B0D17; 
+}
+
+.bold{
+    font-weight: bold; 
+}
