@@ -41,12 +41,49 @@ button{
 
 }
 
-/*01 DESTINATION*/
+/*02 CREW*/
 .crew-div{
     background-image: url("./assets/crew/background-crew-desktop.jpg"); 
     height: 100vh;   
+    background-size: cover;
 }
 
+.crew-nav{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.crew-link{
+    height: 2rem; 
+    width: 2rem; 
+    border-radius: 50%; 
+    margin-right: 5rem; 
+    border: 2px solid pink; 
+    color: pink;
+    cursor: pointer; 
+}
+/*03 TECHNOLOGY*/
+.tech-div{
+    background-image: url("./assets/technology/background-technology-desktop.jpg");
+    height: 100vh;
+   
+}
+
+.tech-nav{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tech-link{
+    height: 2rem; 
+    width: 2rem; 
+    border-radius: 50%; 
+    cursor:pointer; 
+}
 /* FONTS */
 
 /* MISC */

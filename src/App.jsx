@@ -1,9 +1,14 @@
-import {BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+
+//Layouts 
 import Layout from "./components/Layout.jsx"
 import DestLayout from "./components/DestLayout.jsx"
+import CrewLayout from "./components/CrewLayout.jsx"
+import TechLayout from "./components/TechLayout.jsx"
+
+//Pages
 import Home from "./pages/Home.jsx"
 import Destination from "./pages/Destination.jsx"
-import Moon from "./pages/Moon.jsx"
 import Crew from "./pages/Crew.jsx"
 import Technology from "./pages/Technology.jsx"
 
@@ -15,15 +20,15 @@ function App() {
     
           <Route element={<Layout/>}>
             <Route path="/" element={<Home/>}/>
-            <Route path="/destination" element={<DestLayout/>}>
-              <Route index element={<Destination/>}/>
-              <Route path="/destination/:planet" element={<Moon/>}/>
-           
+            <Route element={<DestLayout/>}>
+              <Route path="destination/:planet" element={<Destination/>}/>
             </Route>
-            <Route path="/crew" element={<Crew/>}>
-              <Route path="/crew/:member" element={""}/>
+            <Route element={<CrewLayout/>}>
+              <Route path="crew/:member" element={<Crew/>}/>
             </Route>
-            <Route path="/technology" element={<Technology/>}/>
+            <Route element={<TechLayout/>}>
+              <Route path="technology/:tech" element={<Technology/>}/>
+            </Route>
     
         </Route>
       </Routes>
