@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom"
 
 export default function Home(){
 
     return (
         <div className="home-div">
             <div>
-                <p className = "light-blue-text">So, you want to travel to</p>
-                <h1 className = "white-text">Space</h1>
+                <p className = "light-blue-text">SO, YOU WANT TO TRAVEL TO SPACE</p>
+                <h1 className = "white-text">SPACE</h1>
                 <p className = "light-blue-text">
                 Let's face it: if you want to go to space,
                 you might as well genuinely go to outer space
@@ -13,7 +14,7 @@ export default function Home(){
                 sit back, and relax because we'll give you a
                 truly out of this world experience!</p>
             </div>
-            <button>Explore</button>
+            <Link to="/destination/moon" className="explore-btn dark-blue-text">EXPLORE</Link>
         </div>
     )
 }
