@@ -14,7 +14,7 @@ export default function Home(){
                 sit back, and relax because we'll give you a
                 truly out of this world experience!</p>
             </div>
-            <Link to="/destination/moon" className="explore-btn dark-blue-text">EXPLORE</Link>
+            <Link to="/destination/" className="explore-btn dark-blue-text">EXPLORE</Link>
         </div>
     )
 }

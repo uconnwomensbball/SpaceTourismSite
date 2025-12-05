@@ -4,8 +4,9 @@ import data from "../data.json"
 export default function Destination(){
 
 const [searchParams] = useSearchParams()
-console.log(searchParams)
+
 const destinationFilter = searchParams.get("destination") || "moon"
+
 const destinationsData = data.destinations
 
 const filteredDestination = destinationsData.filter(destination=>{

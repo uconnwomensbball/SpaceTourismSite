@@ -21,13 +21,13 @@ function App() {
           <Route element={<Layout/>}>
             <Route path="/" element={<Home/>}/>
             <Route element={<DestLayout/>}>
-              <Route path="destination/:planet" element={<Destination/>}/>
+              <Route path="destination" element={<Destination/>}/>
             </Route>
             <Route element={<CrewLayout/>}>
-              <Route path="crew/:member" element={<Crew/>}/>
+              <Route path="crew" element={<Crew/>}/>
             </Route>
             <Route element={<TechLayout/>}>
-              <Route path="technology/:tech" element={<Technology/>}/>
+              <Route path="technology" element={<Technology/>}/>
             </Route>
     
         </Route>

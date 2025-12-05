@@ -5,13 +5,9 @@ export default function Crew(){
     const [searchParams] = useSearchParams()
     const crewFilter = searchParams.get("name") || "hurley"
     const crewData = data.crew
-    console.log("crewData", crewData)
-    const filteredCrew = crewData.filter(member=>{
-        console.log("member", member)
-        return crewFilter === member.name})
-   console.log("filteredCrew", filteredCrew)
 
-//T2D - Need to fix filtration logic to return the filteredCrew member
+    const filteredCrew = crewData.filter(member=>{
+        return crewFilter === member.name.split(" ").pop().toLowerCase()})
 
     return (
         <div className="crew-div">
@@ -22,7 +18,10 @@ export default function Crew(){
                 <Link to="?name=glover" className="crew-link"></Link>
                 <Link to="?name=ansari" className="crew-link"></Link>
             </nav>
-            <h2></h2>
+            <h2 className="dark-gray-text">{filteredCrew[0].role}</h2>
+            <h1 className="white-text">{filteredCrew[0].name}</h1>
+            <p className="light-blue-text">{filteredCrew[0].bio}</p>
+            <img src={`${filteredCrew[0].images.png}`}/>
         </div>
     )
 }
