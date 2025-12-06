@@ -6,7 +6,8 @@
 body{
      font-family: "Bellefair", serif;
      font-weight: 400;
-    font-style: normal;
+     font-style: normal;
+     height: 100vh; 
 }
 
 a{
@@ -17,12 +18,22 @@ button{
     cursor: pointer; 
 }
 
+footer{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /*NAV BARS*/
 .main-nav-bar-div{
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    gap: 10rem;
+    padding: 3rem 0 0 3rem;
 }
 
 /* PAGES */
@@ -34,13 +45,22 @@ button{
     height: 100vh;
     display: flex; 
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center; 
+    justify-content: space-evenly;
+    align-items: flex-end; 
+    padding-bottom: 5rem; 
 }
 
-.home-div>div>h1{
+.home-details-div{
+    width: 30%;
+}
+
+.home-details-div>h1{
     font-size: 9rem;
     margin: 0rem; 
+}
+
+.home-details-div>p{
+    text-align: justify;
 }
 
 .explore-btn{
@@ -52,6 +72,7 @@ button{
     border-radius: 50%;
     height: 15rem;
     width: 15%;
+    font-size: 1.75rem;
 
 }
 
@@ -59,7 +80,41 @@ button{
 .destination-div{
     background-image: url("./assets/destination/background-destination-desktop.jpg");
     height: 100vh;
+    padding: 5rem; 
 
+}
+.destination-content-div{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 7rem; 
+}
+
+.destination-div>h2{
+    margin-bottom: 3rem;
+}
+
+.destination-details-div{
+    width: 30%;
+}
+
+.destination-details-div>h1{
+    font-size: 8rem;
+    margin: 0; 
+}
+
+.destination-details-div>p{
+    margin-bottom: 1.5rem;
+    text-align: justify; 
+}
+
+.destination-distance-traveltime-div{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5rem; 
 }
 
 /*02 CREW*/
@@ -67,8 +122,26 @@ button{
     background-image: url("./assets/crew/background-crew-desktop.jpg"); 
     height: 100vh;   
     background-size: cover;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    
 }
 
+.crew-details-div{
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+.crew-details-div>h1{
+    font-size: 3.5rem; 
+    margin: 0; 
+}
 .crew-nav{
     display: flex; 
     flex-direction: row; 
@@ -77,19 +150,45 @@ button{
 }
 
 .crew-link{
-    height: 2rem; 
-    width: 2rem; 
+    height: 1.5rem; 
+    width: 1.5rem; 
     border-radius: 50%; 
     margin-right: 5rem; 
-    border: 2px solid pink; 
-    color: pink;
+    background-color: #4d4d4d;
     cursor: pointer; 
+}
+
+.crew-link:hover{
+    background-color: #FFFFFF;
 }
 /*03 TECHNOLOGY*/
 .tech-div{
     background-image: url("./assets/technology/background-technology-desktop.jpg");
     background-size: cover;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5rem; 
+
+}
+
+.tech-content-div{
+    display: flex; 
+    flex-direction: row; 
+    justify-content:center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.tech-details-div{
+    width: 30%; 
+}
+
+.tech-details-div>h1{
+    font-size: 5rem;
+    margin: 0;  
 }
 
 .tech-nav{
@@ -100,10 +199,22 @@ button{
 }
 
 .tech-link{
-    height: 2rem; 
-    width: 2rem; 
+    height: 4rem; 
+    width: 4rem; 
     border-radius: 50%; 
     cursor:pointer; 
+    border: 1px solid #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-bottom: 1rem; 
+}
+
+.tech-link:hover{
+    color: #0B0D17;
+    background-color: #FFFFFF;
 }
 /* FONTS */
 .bellefair-regular {
@@ -113,6 +224,15 @@ button{
 }
 
 /* MISC */
+.stripes {
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.3) 0 20px,   /* translucent white */
+    rgba(255, 255, 255, 0.3) 20px 40px,
+    rgba(0, 0, 0, 0.1) 40px 60px        /* translucent black */
+  );
+}
+
 .white-text{
     color: #FFFFFF;
 }

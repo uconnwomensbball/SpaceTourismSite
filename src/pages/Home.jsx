@@ -4,8 +4,8 @@ export default function Home(){
 
     return (
         <div className="home-div">
-            <div>
-                <p className = "light-blue-text">SO, YOU WANT TO TRAVEL TO SPACE</p>
+            <div className="home-details-div">
+                <h2 className = "light-blue-text">SO, YOU WANT TO TRAVEL TO</h2>
                 <h1 className = "white-text">SPACE</h1>
                 <p className = "light-blue-text">
                 Let's face it: if you want to go to space,
