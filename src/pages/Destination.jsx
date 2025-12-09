@@ -1,21 +1,13 @@
 import { NavLink, useSearchParams } from "react-router-dom"
 import data from "../data.json"
-//the default page for destinations is the Moon 
+
 export default function Destination(){
-
 const [searchParams] = useSearchParams()
-
 const destinationFilter = searchParams.get("destination") || "moon"
-
 const destinationsData = data.destinations
-
 const filteredDestination = destinationsData.filter(destination=>{
     return destinationFilter === destination.name.toLowerCase()})
 
-//fix the active links
-const activeLink={
-    color: "#FFFFFF"
-}
     return (
         <div className="destination-div">
             <h2 className="dark-gray-text">01 <span className="white-text">PICK YOUR DESTINATION</span></h2>
@@ -23,10 +15,18 @@ const activeLink={
                 <img src={`${destinationFilter? filteredDestination[0].images.png: null}`}/>
                 <div className="destination-details-div">
                     <nav className="destination-nav">
-                        <NavLink to="?destination=moon" style={({isActive})=>isActive? activeLink: null} className="light-blue-text">MOON</NavLink>
-                        <NavLink to="?destination=mars" style={({isActive})=>isActive? activeLink: null} className="light-blue-text">MARS</NavLink>
-                        <NavLink to="?destination=europa" style={({isActive})=>isActive? activeLink: null} className="light-blue-text">EUROPA</NavLink>
-                        <NavLink to="?destination=titan" style={({isActive})=>isActive? activeLink: null} className="light-blue-text">TITAN</NavLink>
+                        <NavLink 
+                            to="?destination=moon"
+                            className={`destination-nav-links ${destinationFilter === "moon" ? "destination-nav-links-active" : null}`}>MOON</NavLink>
+                        <NavLink 
+                            to="?destination=mars"
+                            className={`destination-nav-links ${destinationFilter === "mars" ? "destination-nav-links-active" : null}`}>MARS</NavLink>
+                        <NavLink
+                            to="?destination=europa"
+                            className={`destination-nav-links ${destinationFilter === "europa" ? "destination-nav-links-active" : null}`}>EUROPA</NavLink>
+                        <NavLink 
+                            to="?destination=titan"
+                            className={`destination-nav-links ${destinationFilter === "titan" ? "destination-nav-links-active" : ""}`}>TITAN</NavLink>
                     </nav>
                     <h1 className="white-text">{destinationFilter? filteredDestination[0].name.toUpperCase(): null}</h1>
                     <p className="light-blue-text">{destinationFilter? filteredDestination[0].description: null}</p>
@@ -44,6 +44,5 @@ const activeLink={
                 </div>
             </div>
         </div>
-       
     )
 }

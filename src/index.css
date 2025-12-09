@@ -21,19 +21,92 @@ button{
 footer{
     display: flex; 
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: .25rem;
 }
 
 /*NAV BARS*/
 .main-nav-bar-div{
     display: flex; 
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: absolute;
-    gap: 10rem;
-    padding: 3rem 0 0 3rem;
+    gap: 3rem;
+    padding: 3rem 3rem 0 3rem;
+    width: 100%;
+}
+
+.main-nav-bar-line{
+    height: 1px;
+    background-color:#4d4d4d; 
+    width: 40%;
+}
+
+.main-nav-bar-links-div{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem; 
+}
+
+.destination-nav{
+    display: flex; 
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/* NAVLINKS */
+.main-nav-bar-links{
+    color: #FFFFFF;
+    padding-bottom: 1.5rem;
+}
+
+.main-nav-bar-links-active, .main-nav-bar-links-hover:hover{
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.destination-nav-links{
+    color: #D0D6F9;
+    padding-bottom: 1rem;
+}
+
+.destination-nav-links-active, .destination-nav-links:hover{
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.crew-nav-links{
+    background-color: #4d4d4d;
+    height: 1.5rem; 
+    width: 1.5rem; 
+    border-radius: 50%; 
+    margin-right: 5rem; 
+}
+
+.crew-nav-links-active, .crew-nav-links:hover{
+    background-color: #FFFFFF;
+}
+
+.tech-nav-links{
+    height: 4rem; 
+    width: 4rem; 
+    border-radius: 50%; 
+    cursor:pointer; 
+    border: 1px solid #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-bottom: 1rem; 
+}
+
+.tech-nav-links-active, .tech-nav-links:hover{
+    color: #0B0D17;
+    background-color: #FFFFFF;
 }
 
 /* PAGES */
@@ -149,18 +222,7 @@ footer{
     align-items: center;
 }
 
-.crew-link{
-    height: 1.5rem; 
-    width: 1.5rem; 
-    border-radius: 50%; 
-    margin-right: 5rem; 
-    background-color: #4d4d4d;
-    cursor: pointer; 
-}
 
-.crew-link:hover{
-    background-color: #FFFFFF;
-}
 /*03 TECHNOLOGY*/
 .tech-div{
     background-image: url("./assets/technology/background-technology-desktop.jpg");
@@ -198,24 +260,6 @@ footer{
     align-items: center;
 }
 
-.tech-link{
-    height: 4rem; 
-    width: 4rem; 
-    border-radius: 50%; 
-    cursor:pointer; 
-    border: 1px solid #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
-    margin-bottom: 1rem; 
-}
-
-.tech-link:hover{
-    color: #0B0D17;
-    background-color: #FFFFFF;
-}
 /* FONTS */
 .bellefair-regular {
   font-family: "Bellefair", serif;
