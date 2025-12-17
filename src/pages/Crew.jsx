@@ -22,7 +22,7 @@ export default function Crew(){
                     <NavLink to="?name=ansari" className={`crew-nav-links ${crewFilter === "ansari"? "crew-nav-links-active": null}`}></NavLink>
                 </nav>
             </div>
-            <img src={`${filteredCrew[0].images.png}`}/>
+            <img className = "crew-img" src={`${filteredCrew[0].images.png}`}/>
         </div>
     )
 }

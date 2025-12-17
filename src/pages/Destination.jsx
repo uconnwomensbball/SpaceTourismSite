@@ -10,9 +10,12 @@ const filteredDestination = destinationsData.filter(destination=>{
 
     return (
         <div className="destination-div">
-            <h2 className="dark-gray-text">01 <span className="white-text">PICK YOUR DESTINATION</span></h2>
+            
             <div className="destination-content-div">
-                <img src={`${destinationFilter? filteredDestination[0].images.png: null}`}/>
+                <div>
+                    <h2 className="dark-gray-text">01 <span className="white-text">PICK YOUR DESTINATION</span></h2>
+                    <img className="destination-img" src={`${destinationFilter? filteredDestination[0].images.png: null}`}/>
+                </div>
                 <div className="destination-details-div">
                     <nav className="destination-nav">
                         <NavLink 
