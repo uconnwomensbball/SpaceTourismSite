@@ -10,7 +10,6 @@ const filteredDestination = destinationsData.filter(destination=>{
 
     return (
         <div className="destination-div">
-            
             <div className="destination-content-div">
                 <div>
                     <h2 className="dark-gray-text">01 <span className="white-text">PICK YOUR DESTINATION</span></h2>
@@ -35,14 +34,14 @@ const filteredDestination = destinationsData.filter(destination=>{
                     <p className="light-blue-text">{destinationFilter? filteredDestination[0].description: null}</p>
                     <hr></hr>
                     <div className="destination-distance-traveltime-div">
-                    <div>
-                        <p className="light-blue-text">AVG. DISTANCE</p>
-                        <p className="white-text">{destinationFilter? filteredDestination[0].distance.toUpperCase(): null}</p>
-                    </div>
-                    <div>
-                        <p className="light-blue-text">EST. TRAVEL TIME</p>
-                        <p className="white-text"> {destinationFilter? filteredDestination[0].travel.toUpperCase(): null}</p>
-                    </div>
+                        <div>
+                            <p className="light-blue-text">AVG. DISTANCE</p>
+                            <p className="white-text">{destinationFilter? filteredDestination[0].distance.toUpperCase(): null}</p>
+                        </div>
+                        <div>
+                            <p className="light-blue-text">EST. TRAVEL TIME</p>
+                            <p className="white-text"> {destinationFilter? filteredDestination[0].travel.toUpperCase(): null}</p>
+                        </div>
                     </div>
                 </div>
             </div>

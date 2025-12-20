@@ -54,12 +54,9 @@ footer{
     rgba(255, 255, 255, 0.08),
     rgba(255, 255, 255, 0.02)
   );
-
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-
   padding: 1rem 4rem;
- 
 }
 
 .destination-nav{
@@ -131,10 +128,11 @@ footer{
     justify-content: space-evenly;
     align-items: flex-end; 
     padding-bottom: 5rem; 
+    
 }
 
 .home-details-div{
-    width: 30%;
+    max-width: 500px; 
 }
 
 .home-details-div>h1{
@@ -153,8 +151,10 @@ footer{
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 50%;
-    height: 15rem;
-    width: 15%;
+    height: 14rem;
+    width: 13rem;
+    min-height: 14rem;
+    min-width: 13rem;
     font-size: 1.75rem;
 
 }
@@ -162,7 +162,7 @@ footer{
 /*01 DESTINATION*/
 .destination-div{
     background-image: url("./assets/destination/background-destination-desktop.jpg");
-    height: 100vh;
+    height: 100vh; 
     padding: 5rem; 
     display: flex;
     flex-direction: column;
@@ -315,21 +315,81 @@ footer{
 /* MEDIA QUERIES */
 /* Tablet styles */
 @media (max-width: 1024px) {
+    /* Nav Bar */
+    .main-nav-bar-div{
+        padding: 0; 
+        justify-content: space-evenly;
+    }
 
+    .main-nav-bar-line{
+        display: none;
+    }
+
+    .main-nav-bar-links-div{
+        gap: 2rem; 
+    }
+
+    /* Home Page */
     .home-div{
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items:  center;
         text-align: center; 
+        background-image: url("./assets/home/background-home-tablet.jpg");
+        padding-top: 11rem; 
     }
-    .home-details-div{
-        width: 50%;
-    }
+
     .home-details-div>p{
-    text-align: center;
+        text-align: center;
     }
-    .explore-btn{
-      width: 25%;
-      margin-top: 2rem;
+
+    /* Destination Page */
+
+    .destination-nav{
+        text-align: center; 
+        align-self: center;
     }
+
+    .destination-content-div{
+        height: 100vh; 
+        flex-direction: column; 
+        gap: 2rem;
+        text-align: center;
+        padding-top: 5rem; 
+    }
+
+     .destination-content-div>div>h2{
+        margin-bottom:1.5rem;
+    }
+
+    .destination-content-div>div>img{
+        width: 300px;
+    }
+
+    .destination-details-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .destination-details-div>h1{
+        font-size: 6rem;
+        margin: 0; 
+    }
+
+    .destination-details-div>p{
+        border-bottom: 1px solid #4d4d4d;
+        padding-bottom: 2rem;
+        margin: 0; 
+        text-align: center;
+    }
+}
+
+ /* Crew Page */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  
 }
