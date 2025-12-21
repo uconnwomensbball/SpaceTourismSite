@@ -12,19 +12,18 @@ export default function Technology(){
   
     return (
         <div className = "tech-div">
-            
             <div className="tech-content-div">
-            <div>
-                <NavLink 
-                    to="?technology=launchvehicle"
-                    className={`tech-nav-links ${technologyFilter==="launchvehicle"? "tech-nav-links-active": null}`}>1</NavLink>
-                <NavLink 
-                    to="?technology=spaceport" 
-                    className={`tech-nav-links ${technologyFilter==="spaceport"? "tech-nav-links-active": null}`}>2</NavLink>
-                <NavLink 
-                    to="?technology=spacecapsule" 
-                    className={`tech-nav-links ${technologyFilter==="spacecapsule"? "tech-nav-links-active": null}`}>3</NavLink>
-            </div>
+                <div className="tech-nav">
+                    <NavLink 
+                        to="?technology=launchvehicle"
+                        className={`tech-nav-links ${technologyFilter==="launchvehicle"? "tech-nav-links-active": null}`}>1</NavLink>
+                    <NavLink 
+                        to="?technology=spaceport" 
+                        className={`tech-nav-links ${technologyFilter==="spaceport"? "tech-nav-links-active": null}`}>2</NavLink>
+                    <NavLink 
+                        to="?technology=spacecapsule" 
+                        className={`tech-nav-links ${technologyFilter==="spacecapsule"? "tech-nav-links-active": null}`}>3</NavLink>
+                </div>
             <div className="tech-details-div"> 
                 <h2 className="white-text"><span className="dark-gray-text bold">03 </span>SPACE LAUNCH 101</h2>
                 <div>
