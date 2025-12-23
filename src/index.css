@@ -1,4 +1,8 @@
 /* GENERAL */
+.test{
+    position: relative; 
+}
+
 *{
     box-sizing: border-box;
 }
@@ -19,11 +23,15 @@ button{
 }
 
 footer{
-    position: absolute; 
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: .25rem;
+    position: absolute;
+    margin: auto; 
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white; 
+    padding-bottom: 1rem; 
+    
 }
 
 /*NAV BARS*/
@@ -130,7 +138,7 @@ footer{
 .home-div{
     background-image: url("./assets/home/background-home-desktop.jpg");
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
@@ -170,7 +178,8 @@ footer{
 /*01 DESTINATION*/
 .destination-div{
     background-image: url("./assets/destination/background-destination-desktop.jpg");
-    height: 100vh; 
+    background-size: cover;
+    min-height: 100vh; 
     padding: 5rem; 
     display: flex;
     flex-direction: column;
@@ -317,6 +326,13 @@ footer{
 /* MEDIA QUERIES */
 /* Tablet styles */
 @media (max-width: 1024px) {
+
+    /* Footer */
+    footer{
+        right: 0%;
+        transform: translateX(35%);
+    }
+
     /* Main Nav Bar */
     .main-nav-bar-div{
         padding: 0; 
@@ -338,6 +354,7 @@ footer{
         align-items:  center;
         text-align: center; 
         background-image: url("./assets/home/background-home-tablet.jpg");
+        background-size: cover;
         padding-top: 11rem; 
     }
 
