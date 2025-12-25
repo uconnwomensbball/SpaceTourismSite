@@ -12,6 +12,7 @@ body{
      font-weight: 400;
      font-style: normal;
      height: 100vh; 
+     min-width: 320px; 
 
 }
 
@@ -74,6 +75,13 @@ footer{
     gap: 1rem;
 }
 
+.close-mobile-navbar-btn{
+    cursor: pointer; 
+    position: absolute; 
+    top: 5%; 
+    left: 87%;
+     
+}
 
 .tech-nav{
     display: flex;
@@ -356,6 +364,11 @@ footer{
         gap: 2rem; 
     }
 
+    .hamburger-icon{
+        cursor: pointer;
+        height: 1.5rem; 
+    }
+
     /* Home Page */
     .home-div{
         flex-direction: column;
@@ -489,19 +502,46 @@ footer{
 .main-nav-bar-div{
     justify-content: space-between;
     align-items: flex-start;
+    padding: 1.5rem 1.5rem 0 1rem;
 }
 
   .main-nav-bar-links-div{
     flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 3rem;
+    font-size: .80rem;
   }
 
 /* Home Page */
+
+.home-div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 0; 
+    margin: 0; 
+}
+
 .home-details-div{
     padding: 0 2rem;
+    margin: 0; 
 }
 .home-details-div>h1{
-    font-size: 5rem;
+    font-size: 4rem;
 
+}
+
+.home-details-div>p{
+    margin: 0; 
+}
+
+.explore-btn{
+    height: 11rem;
+    width: 10rem;
+    min-height: 11rem;
+    min-width: 10rem;
+    font-size: 1.25rem;
+    margin-top: 1rem; 
 }
 
  /* Destination Page */

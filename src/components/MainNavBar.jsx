@@ -1,12 +1,41 @@
 import { NavLink } from "react-router-dom"
+import { useState, useEffect } from "react"
 
 export default function MainNavBar(){
+    const [isMobile, setIsMobile] = useState(
+        window.innerWidth < 768
+    )
+
+    const [isMobileNavBarDisplayed, setIsMobileNavBarDisplayed] = useState(false)
+
+    useEffect(()=>{
+        const handleResize = ()=>{
+            setIsMobile(window.innerWidth < 768)
+        }
+
+        window.addEventListener("resize", handleResize)
+      
+    }, [])
+    
+    function displayNavBar(){
+        console.log("navbar displayed!")
+        setIsMobileNavBarDisplayed(prevVal=>!prevVal)
+    }
+
+    function closeMobileNavBar(){
+        setIsMobileNavBarDisplayed(false)
+    }
+
     return (
+        
         <div className="main-nav-bar-div">
             <img src="\src\assets\shared\logo.svg"/>
-            <div className="main-nav-bar-line"></div>
+            {isMobile && !isMobileNavBarDisplayed? <img className="hamburger-icon" onClick={displayNavBar} src="\src\assets\shared\icon-hamburger.svg"/>: null}
             
+            <div className="main-nav-bar-line"></div>
+            {isMobileNavBarDisplayed || !isMobile?
             <div className="main-nav-bar-links-div">
+             {isMobile && isMobileNavBarDisplayed? <img className = "close-mobile-navbar-btn" src="\src\assets\shared\icon-close.svg" onClick={closeMobileNavBar}/>: null}
                 <NavLink
                     to="/"
                     className={({isActive}) => `main-nav-bar-links main-nav-bar-links-hover ${isActive? "main-nav-bar-links-active": null}`}><span className="bold">00</span> HOME</NavLink>
@@ -19,7 +48,10 @@ export default function MainNavBar(){
                 <NavLink  
                     to="/technology"
                     className={({isActive}) => `main-nav-bar-links main-nav-bar-links-hover ${isActive? "main-nav-bar-links-active": null}`}><span className="bold">03</span> TECHNOLOGY</NavLink>
-            </div>
+                    
+            </div>:null}
+             
         </div>
+       
     )
 }
