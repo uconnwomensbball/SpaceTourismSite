@@ -391,12 +391,12 @@ footer{
         text-align: center; 
         background-image: url("./assets/home/background-home-tablet.jpg");
         background-size: cover;
-        padding-top: 11rem; 
-        padding-bottom: 7rem; 
+        padding-top: 9rem; 
+        padding-bottom: 9rem; 
     }
 
     .home-details-div>p{
-        text-align: center;
+        text-align: center;  
     }
 
     /* Destination Page */
@@ -522,7 +522,8 @@ footer{
 
 .main-nav-bar-div{
      justify-content: space-between;
-     padding: 1.5rem; 
+     align-items: flex-start;
+     padding: 2rem; 
 }
 
   .main-nav-bar-links-div{
@@ -563,7 +564,7 @@ footer{
 }
 
 .home-details-div>p{
-    margin: 0; 
+    margin-bottom: 1rem; 
     text-align: center;
 }
 
