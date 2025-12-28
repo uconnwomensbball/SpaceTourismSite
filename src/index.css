@@ -541,6 +541,7 @@ footer{
     align-items: center; 
     padding: 0; 
     margin: 0; 
+    text-align: center;
 }
 
 .home-details-div{
@@ -553,6 +554,7 @@ footer{
 
 .home-details-div>p{
     margin: 0; 
+    text-align: center;
 }
 
 .explore-btn{

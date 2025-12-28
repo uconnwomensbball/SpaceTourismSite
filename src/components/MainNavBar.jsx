@@ -30,13 +30,13 @@ export default function MainNavBar(){
     return (
         
         <div className="main-nav-bar-div">
-            <img src="./assets/shared/logo.svg" alt=""/>
-            {isMobile && !isMobileNavBarDisplayed? <img className="hamburger-icon" onClick={displayNavBar} src="./assets/shared/icon-hamburger.svg"/>: null}
+            <img src="./logo.svg" alt=""/>
+            {isMobile && !isMobileNavBarDisplayed? <img className="hamburger-icon" onClick={displayNavBar} src="./icon-hamburger.svg"/>: null}
          
             <div className="main-nav-bar-line"></div>
             {isMobileNavBarDisplayed || !isMobile?
             <div className="main-nav-bar-links-div">
-             {isMobile && isMobileNavBarDisplayed? <img className = "close-mobile-navbar-btn" src="./assets/shared/icon-close.svg" onClick={closeMobileNavBar}/>: null}
+             {isMobile && isMobileNavBarDisplayed? <img className = "close-mobile-navbar-btn" src="./icon-close.svg" onClick={closeMobileNavBar}/>: null}
                 <NavLink
                     to="/"
                     className={({isActive}) => `main-nav-bar-links main-nav-bar-links-hover ${isActive? "main-nav-bar-links-active": null}`}><span className="bold">00</span> HOME</NavLink>
