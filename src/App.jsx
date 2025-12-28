@@ -7,6 +7,7 @@ import CrewLayout from "./components/CrewLayout.jsx"
 import TechLayout from "./components/TechLayout.jsx"
 
 //Pages
+import NotFound from "./pages/404NotFound.jsx"
 import Home from "./pages/Home.jsx"
 import Destination from "./pages/Destination.jsx"
 import Crew from "./pages/Crew.jsx"
@@ -19,6 +20,7 @@ function App() {
       <Routes>
     
           <Route element={<Layout/>}>
+            <Route path="*" element={<NotFound/>}/>
             <Route path="/" element={<Home/>}/>
             <Route element={<DestLayout/>}>
               <Route path="destination" element={<Destination/>}/>

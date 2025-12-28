@@ -4,7 +4,7 @@ import Footer from "./Footer.jsx"
 
 export default function Layout(){
     return (
-         <div className= "test">
+         <div className= "layout-div">
             <MainNavBar/>
             <Outlet/>
             <Footer/>

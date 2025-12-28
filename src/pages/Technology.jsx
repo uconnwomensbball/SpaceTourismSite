@@ -32,7 +32,7 @@ export default function Technology(){
                     <p className="light-blue-text">{filteredTechnology[0].description}</p>
                 </div>
             </div>
-            <img className="tech-img" src={`${filteredTechnology[0].images.portrait}`}/>
+            <img className="tech-img" src={`${filteredTechnology[0].images.portrait}`} alt={`${filteredTechnology[0]}`}/>
         </div>
         </div>
 

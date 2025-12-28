@@ -1,5 +1,7 @@
 /* GENERAL */
-.test{
+/*TODO: clean up*/
+
+.layout-div{
     position: relative; 
 }
 
@@ -318,6 +320,24 @@ footer{
 
 .tech-img{
     height: 30rem; 
+}
+
+/* 404 NOT FOUND */
+.not-found-div{
+    background-image: url("./assets/crew/background-crew-desktop.jpg"); 
+    min-height: 100vh;   
+    background-size: cover;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 2rem;
+}
+
+.not-found-div>h1{
+    margin: 0;
 }
 
 /* FONTS */

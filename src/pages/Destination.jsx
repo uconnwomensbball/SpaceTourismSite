@@ -13,7 +13,7 @@ const filteredDestination = destinationsData.filter(destination=>{
             <div className="destination-content-div">
                 <div>
                     <h2 className="dark-gray-text">01 <span className="white-text">PICK YOUR DESTINATION</span></h2>
-                    <img className="destination-img" src={`${destinationFilter? filteredDestination[0].images.png: null}`}/>
+                    <img className="destination-img" src={`${destinationFilter? filteredDestination[0].images.png: null}`} alt={`${filteredDestination[0].name}`}/>
                 </div>
                 <div className="destination-details-div">
                     <nav className="destination-nav">
