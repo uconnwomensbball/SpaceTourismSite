@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import { useState, useEffect } from "react"
-import logo from "../assets/shared/logo.svg"
+
    //TODO: add accessibility to hamburger icon //
 export default function MainNavBar(){
     const [isMobile, setIsMobile] = useState(
@@ -30,8 +30,8 @@ export default function MainNavBar(){
     return (
         
         <div className="main-nav-bar-div">
-            <img src={logo} alt=""/>
-            {isMobile && !isMobileNavBarDisplayed? <img className="hamburger-icon" onClick={displayNavBar} src="\src\assets\shared\icon-hamburger.svg"/>: null}
+            <img src="./assets/shared/logo.svg" alt=""/>
+            {isMobile && !isMobileNavBarDisplayed? <img className="hamburger-icon" onClick={displayNavBar} src="./assets/shared/icon-hamburger.svg"/>: null}
          
             <div className="main-nav-bar-line"></div>
             {isMobileNavBarDisplayed || !isMobile?

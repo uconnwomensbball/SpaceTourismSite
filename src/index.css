@@ -369,7 +369,7 @@ footer{
 
 /* MEDIA QUERIES */
 /* Tablet styles */
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
     /* Main Nav Bar */
     .main-nav-bar-div{
