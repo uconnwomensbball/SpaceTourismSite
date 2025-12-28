@@ -369,7 +369,7 @@ footer{
 
 /* MEDIA QUERIES */
 /* Tablet styles */
-@media (min-width: 768px) and (max-width: 1440px){
+@media (min-width: 768px) {
 
     /* Main Nav Bar */
     .main-nav-bar-div{
@@ -518,7 +518,7 @@ footer{
 
 }
 /* Mobile styles */
-@media (max-width: 768px) {
+@media (max-width: 599px) {
 
 .main-nav-bar-div{
     justify-content: space-between;
