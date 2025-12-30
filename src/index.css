@@ -141,7 +141,7 @@ footer{
 /* PAGES */
 
 /* 00 HOME */
-.home-div{
+.home-main{
     background-image: url("./assets/home/background-home-desktop.jpg");
     background-size: cover;
     min-height: 100vh;
@@ -150,7 +150,6 @@ footer{
     justify-content: space-evenly;
     align-items: flex-end; 
     padding-bottom: 7rem; 
-    
 }
 
 .home-details-div{
@@ -181,11 +180,10 @@ footer{
     min-height: 14rem;
     min-width: 13rem;
     font-size: 1.75rem;
-
 }
 
 /*01 DESTINATION*/
-.destination-div{
+.destination-main{
     background-image: url("./assets/destination/background-destination-desktop.jpg");
     background-size: cover;
     min-height: 100vh; 
@@ -233,7 +231,7 @@ footer{
 }
 
 /*02 CREW*/
-.crew-div{
+.crew-main{
     background-image: url("./assets/crew/background-crew-desktop.jpg"); 
     height: 100vh;   
     background-size: cover;
@@ -258,8 +256,8 @@ footer{
 }
 
 .crew-details-div>p{
-     line-height: 1.3;
-        font-size: 1.2rem;
+    line-height: 1.3;
+    font-size: 1.2rem;
 }
 
 .crew-nav{
@@ -278,7 +276,7 @@ footer{
 }
 
 /*03 TECHNOLOGY*/
-.tech-div{
+.tech-main{
     background-image: url("./assets/technology/background-technology-desktop.jpg");
     background-size: cover;
     height: 100vh;
@@ -286,7 +284,6 @@ footer{
     flex-direction: column;
     justify-content: center;
     padding: 5rem; 
-
 }
 
 .tech-content-div{
@@ -298,8 +295,8 @@ footer{
 }
 
 .tech-details-div>div>p{
-       line-height: 1.3;
-        font-size: 1.2rem;
+    line-height: 1.3;
+    font-size: 1.2rem;
 }
 
 .tech-details-div>div>h1{
@@ -335,9 +332,9 @@ footer{
 
 /* FONTS */
 .bellefair-regular {
-  font-family: "Bellefair", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* MISC */
@@ -364,7 +361,7 @@ footer{
 /* Tablet styles */
 @media (min-width: 768px) and (max-width: 1024px){
 
-    /* Main Nav Bar */
+    /* Nav Bar -- Tablet*/
     .main-nav-bar-div{
         padding: 0; 
         justify-content: space-evenly;
@@ -383,8 +380,8 @@ footer{
         height: 1.5rem; 
     }
 
-    /* Home Page */
-    .home-div{
+    /* Home Page -- Tablet*/
+    .home-main{
         flex-direction: column;
         justify-content: space-between;
         align-items:  center;
@@ -399,15 +396,14 @@ footer{
         text-align: center;  
     }
 
-    /* Destination Page */
-
+    /* Destination Page -- Tablet*/
     .destination-nav{
         text-align: center; 
         align-self: center;
     }
 
     .destination-content-div{
-        height: 100vh; 
+        min-height: 100vh; 
         flex-direction: column; 
         gap: 1.5rem;
         text-align: center;
@@ -441,9 +437,8 @@ footer{
         text-align: center;
     }
 
-    /* Crew Page */
-
-    .crew-div{
+    /* Crew Page -- Tablet*/
+    .crew-main{
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
@@ -456,11 +451,12 @@ footer{
         text-align: center; 
         height: 20%;
         width: 70%;
-
     }
-.crew-details-div>h1{
+
+    .crew-details-div>h1{
        font-size: 2.5rem; 
     }
+
     .crew-details-div>h2{
         margin: 0 0 1rem 0; 
     }
@@ -478,10 +474,9 @@ footer{
        margin-top: 1rem;
     }
 
- /* Technology Page */
-    .tech-div{
-        height: 20%;
-        
+    /* Technology Page -- Tablet*/
+    .tech-main{
+        height: 100vh;
     }
 
     .tech-content-div{
@@ -494,94 +489,99 @@ footer{
     .tech-details-div{
         width: 80%;
     }
-  .tech-details-div>div>h1{
+
+    .tech-details-div>div>h1{
         font-size: 2.5rem;
     }
+
     .tech-details-div>h2{
-       margin: 1.5rem 0 0 0; 
+        margin: 1.5rem 0 0 0; 
     }
 
     .tech-details-div>div>p{
-         line-height: 1.3;
+        line-height: 1.3;
         font-size: 1.2rem;
     }
 
     .tech-img{
-         height: 20rem; 
+        height: 20rem; 
     }
 
     .tech-nav{
         margin-top: 1rem; 
         flex-direction: row;
         gap: 1.75rem; 
+    }
 }
 
-}
 /* Mobile styles */
 @media (max-width: 767px) {
 
-.main-nav-bar-div{
-     justify-content: space-between;
-     align-items: flex-start;
-     padding: 2rem; 
-}
+    /* Nav Bar -- Tablet*/
+    .main-nav-bar-div{
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2rem; 
+    }
 
-  .main-nav-bar-links-div{
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem 2.5rem;
-    font-size: .80rem;
-    gap: 2rem;
-  }
+    .main-nav-bar-links-div{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 2.5rem;
+        font-size: .80rem;
+        gap: 2rem;
+    }
 
-  .main-nav-bar-links{
-    display: flex; 
-    gap: .25rem;
-    padding-bottom: .5rem;
-}
+    .main-nav-bar-links{
+        display: flex; 
+        gap: .25rem;
+        padding-bottom: .5rem;
+    }
 
-.main-nav-bar-line{
-    display: none;
-}
-/* Home Page */
+    .main-nav-bar-line{
+        display: none;
+    }
 
-.home-div{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    padding: 0; 
-    margin: 0; 
-    text-align: center;
-}
+    /* Home Page -- Mobile*/
+    .home-main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        padding: 0; 
+        margin: 0; 
+        text-align: center;
+        background-image: url("./assets/home/background-home-mobile.jpg");
+    }
 
-.home-details-div{
-    padding: 0 2rem;
-    margin: 0; 
-}
-.home-details-div>h1{
-    font-size: 4rem;
-}
+    .home-details-div{
+        padding: 0 2rem;
+        margin: 0; 
+    }
 
-.home-details-div>p{
-    margin-bottom: 1rem; 
-    text-align: center;
-}
+    .home-details-div>h1{
+        font-size: 4rem;
+    }
 
-.explore-btn{
-    height: 11rem;
-    width: 10rem;
-    min-height: 11rem;
-    min-width: 10rem;
-    font-size: 1.25rem;
-    margin-top: 1rem; 
-}
+    .home-details-div>p{
+        margin-bottom: 1rem; 
+        text-align: center;
+    }
 
- /* Destination Page */
-.destination-div{
-    padding: 0 5rem; 
-}
+    .explore-btn{
+        height: 11rem;
+        width: 10rem;
+        min-height: 11rem;
+        min-width: 10rem;
+        font-size: 1.25rem;
+        margin-top: 1rem; 
+    }
+
+    /* Destination Page -- Mobile*/
+    .destination-main{
+        padding: 0 5rem; 
+    }
    
-  .destination-content-div>div>img{
+    .destination-content-div>div>img{
         width: 12rem;
     }
 
@@ -589,59 +589,68 @@ footer{
         font-size: 3rem;
         margin: .75rem 0; 
     }
-.destination-content-div>div>h2{
-     font-size: 1.25rem;
-}
+
+    .destination-content-div>div>h2{
+        font-size: 1.25rem;
+    }
+
     .destination-details-div{
         width: 100%;
     }
 
-
- /* Crew Page */
-.crew-details-div>h1{
-    font-size: 2rem;
-}
-.crew-details-div>h2{
-    font-size: 1.25rem;
-}
-
-.crew-details-div>p{
-    margin: 1rem 0 0 0 ; 
-}
-
-.crew-nav-links{
-    height: 1rem; 
-    width: 1rem;  
-}
-
-.crew-img{
-    height: 17rem;
-    margin-top: 1rem;
-      
+    /* Crew Page -- Mobile*/
+    .crew-details-div>h1{
+        font-size: 2rem;
+    }
+    
+    .crew-details-div>h2{
+        font-size: 1.25rem;
     }
 
- /* Technology Page */
-.tech-div{
-    min-height: 100vh;
-    padding: 0; 
+    .crew-details-div>p{
+        margin: 1rem 0 0 0 ; 
+    }
+
+    .crew-nav-links{
+        height: 1rem; 
+        width: 1rem;  
+    }
+
+    .crew-img{
+        height: 17rem;
+        margin-top: 1rem;
+    }
+
+    /* Technology Page -- Mobile*/
+    .tech-main{
+        min-height: 100vh;
+        padding: 0; 
+    }
+
+    .tech-details-div>div>h1{
+        font-size: 2rem;
+    }
+
+    .tech-details-div>h2, .tech-details-div>div>h2{
+        font-size: 1.25rem;
+    }
+
+    .tech-details-div>div>p{
+        margin: 1rem 0 0 0; 
+    }
+
+    .tech-img{
+        height: 15rem;
+    }
+
+    .tech-nav-links{
+        height: 2.5rem; 
+        width: 2.5rem;
+    }
 }
 
-.tech-details-div>div>h1{
-    font-size: 2rem;
-}
-
- .tech-details-div>h2, .tech-details-div>div>h2{
-    font-size: 1.25rem;
- }
-.tech-details-div>div>p{
-    margin: 1rem 0 0 0; 
-}
- .tech-img{
-    height: 15rem;
-}
-
-.tech-nav-links{
-    height: 2.5rem; 
-    width: 2.5rem;
-}
+ /* Accessibility */
+.explore-btn:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
 }

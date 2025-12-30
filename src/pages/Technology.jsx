@@ -11,19 +11,25 @@ export default function Technology(){
     })
   
     return (
-        <div className = "tech-div">
+        <main className = "tech-main">
             <div className="tech-content-div">
-                <div className="tech-nav">
+                <nav className="tech-nav" aria-label="technology selector">
                     <NavLink 
                         to="?technology=launchvehicle"
-                        className={`tech-nav-links ${technologyFilter==="launchvehicle"? "tech-nav-links-active": null}`}>1</NavLink>
+                        className={`tech-nav-links ${technologyFilter==="launchvehicle"? "tech-nav-links-active": null}`}
+                        aria-label="launch vehicle"
+                        aria-current={technologyFilter==="launchvehicle" ? "page" : undefined}>1</NavLink>
                     <NavLink 
                         to="?technology=spaceport" 
-                        className={`tech-nav-links ${technologyFilter==="spaceport"? "tech-nav-links-active": null}`}>2</NavLink>
+                        className={`tech-nav-links ${technologyFilter==="spaceport"? "tech-nav-links-active": null}`}
+                        aria-label="spaceport"
+                        aria-current={technologyFilter==="spaceport" ? "page" : undefined}>2</NavLink>
                     <NavLink 
                         to="?technology=spacecapsule" 
-                        className={`tech-nav-links ${technologyFilter==="spacecapsule"? "tech-nav-links-active": null}`}>3</NavLink>
-                </div>
+                        className={`tech-nav-links ${technologyFilter==="spacecapsule"? "tech-nav-links-active": null}`}
+                        aria-label="spacecapsule"
+                        aria-current={technologyFilter==="spacecapsule" ? "page" : undefined}>3</NavLink>
+                </nav>
             <div className="tech-details-div"> 
                 <h2 className="white-text"><span className="dark-gray-text bold">03 </span>SPACE LAUNCH 101</h2>
                 <div>
@@ -34,7 +40,7 @@ export default function Technology(){
             </div>
             <img className="tech-img" src={`${filteredTechnology[0].images.portrait}`} alt={`${filteredTechnology[0]}`}/>
         </div>
-        </div>
+        </main>
 
     )
 }

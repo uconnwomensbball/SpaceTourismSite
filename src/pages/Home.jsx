@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export default function Home(){
 
     return (
-        <div className="home-div">
+        <main className="home-main">
             <div className="home-details-div">
                 <h2 className = "light-blue-text">SO, YOU WANT TO TRAVEL TO</h2>
                 <h1 className = "white-text">SPACE</h1>
@@ -15,6 +15,6 @@ export default function Home(){
                 truly out of this world experience!</p>
             </div>
                 <Link to="/destination" className="explore-btn dark-blue-text">EXPLORE</Link>   
-        </div>
+        </main>
     )
 }
