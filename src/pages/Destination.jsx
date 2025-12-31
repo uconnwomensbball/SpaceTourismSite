@@ -18,19 +18,19 @@ const filteredDestination = destinationsData.filter(destination=>{
                 <div className="destination-details-div">
                     <nav className="destination-nav" aria-label="destination selector">
                         <NavLink
-                            to="?destination=moon"
+                            to="/destination?destination=moon"
                             className={`destination-nav-links ${destinationFilter === "moon"? "destination-nav-links-active": ""}`}
                             aria-current={destinationFilter === "moon" ? "page" : undefined}>MOON</NavLink>
                         <NavLink 
-                            to="?destination=mars"
+                            to="/destination?destination=mars"
                             className={`destination-nav-links ${destinationFilter === "mars" ? "destination-nav-links-active" : ""}`}
                             aria-current={destinationFilter === "mars" ? "page" : undefined}>MARS</NavLink>
                         <NavLink
-                            to="?destination=europa"
+                            to="/destination?destination=europa"
                             className={`destination-nav-links ${destinationFilter === "europa" ? "destination-nav-links-active" : ""}`}
                             aria-current={destinationFilter === "europa" ? "page" : undefined}>EUROPA</NavLink>
                         <NavLink 
-                            to="?destination=titan"
+                            to="/destination?destination=titan"
                             className={`destination-nav-links ${destinationFilter === "titan" ? "destination-nav-links-active" : ""}`}
                             aria-current={destinationFilter === "titan" ? "page" : undefined}>TITAN</NavLink>
                     </nav>

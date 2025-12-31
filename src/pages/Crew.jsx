@@ -18,22 +18,22 @@ console.log("filteredCrew", filteredCrew)
                 <p className="light-blue-text">{filteredCrew[0].bio}</p>
                 <nav className = "crew-nav" aria-label="crew selector">
                     <NavLink 
-                        to="?name=hurley" 
+                        to="/crew?name=hurley" 
                         className={`crew-nav-links ${crewFilter === "hurley"? "crew-nav-links-active": ""}`} 
                         aria-label="Douglas Hurley" 
                         aria-current={crewFilter === "hurley" ? "page" : undefined}></NavLink>
                     <NavLink 
-                        to="?name=shuttleworth" 
+                        to="/crew?name=shuttleworth" 
                         className={`crew-nav-links ${crewFilter === "shuttleworth"? "crew-nav-links-active": ""}`} 
                         aria-label="Mark Shuttleworth" 
                         aria-current={crewFilter === "shuttleworth" ? "page" : undefined}></NavLink>
                     <NavLink 
-                        to="?name=glover" 
+                        to="/crew?name=glover" 
                         className={`crew-nav-links ${crewFilter === "glover"? "crew-nav-links-active": ""}`} 
                         aria-label="Victor Glover" 
                         aria-current={crewFilter === "glover" ? "page" : undefined}></NavLink>
                     <NavLink 
-                        to="?name=ansari" 
+                        to="/crew?name=ansari" 
                         className={`crew-nav-links ${crewFilter === "ansari"? "crew-nav-links-active": ""}`} 
                         aria-label="Anousheh Ansari" 
                         aria-current={crewFilter === "ansari" ? "page" : undefined}></NavLink>

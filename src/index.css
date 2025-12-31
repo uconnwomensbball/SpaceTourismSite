@@ -663,8 +663,3 @@ footer{
     outline: 3px solid #ffffff;
     outline-offset: 4px;
 }
-
-/* TEST --remove me! */
-.main-nav-bar-div {
-    background: rgba(255, 0, 0, 0.2);
-}

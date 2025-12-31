@@ -15,17 +15,17 @@ export default function Technology(){
             <div className="tech-content-div">
                 <nav className="tech-nav" aria-label="technology selector">
                     <NavLink 
-                        to="?technology=launchvehicle"
+                        to="/technology?technology=launchvehicle"
                         className={`tech-nav-links ${technologyFilter==="launchvehicle"? "tech-nav-links-active": null}`}
                         aria-label="launch vehicle"
                         aria-current={technologyFilter==="launchvehicle" ? "page" : undefined}>1</NavLink>
                     <NavLink 
-                        to="?technology=spaceport" 
+                        to="/technology?technology=spaceport" 
                         className={`tech-nav-links ${technologyFilter==="spaceport"? "tech-nav-links-active": null}`}
                         aria-label="spaceport"
                         aria-current={technologyFilter==="spaceport" ? "page" : undefined}>2</NavLink>
                     <NavLink 
-                        to="?technology=spacecapsule" 
+                        to="/technology?technology=spacecapsule" 
                         className={`tech-nav-links ${technologyFilter==="spacecapsule"? "tech-nav-links-active": null}`}
                         aria-label="spacecapsule"
                         aria-current={technologyFilter==="spacecapsule" ? "page" : undefined}>3</NavLink>
