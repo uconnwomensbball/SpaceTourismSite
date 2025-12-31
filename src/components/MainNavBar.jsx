@@ -41,13 +41,13 @@ export default function MainNavBar(){
                     to="/"
                     className={({isActive}) => `main-nav-bar-links main-nav-bar-links-hover ${isActive? "main-nav-bar-links-active": null}`}><span className="bold">00</span> HOME</NavLink>
                 <NavLink 
-                    to="/destination"
+                    to="/destination?destination=moon"
                     className={({isActive}) => `main-nav-bar-links main-nav-bar-links-hover ${isActive? "main-nav-bar-links-active": null}`}><span className="bold">01</span> DESTINATION</NavLink>
                 <NavLink 
-                    to="/crew"
+                    to="/crew?name=hurley"
                     className={({isActive}) => `main-nav-bar-links main-nav-bar-links-hover ${isActive? "main-nav-bar-links-active": null}`}><span className="bold">02</span> CREW</NavLink>
                 <NavLink  
-                    to="/technology"
+                    to="/technology?technology=launchvehicle"
                     className={({isActive}) => `main-nav-bar-links main-nav-bar-links-hover ${isActive? "main-nav-bar-links-active": null}`}><span className="bold">03</span> TECHNOLOGY</NavLink>
                     
             </div>:null}
