@@ -375,11 +375,6 @@ footer{
         gap: 2rem; 
     }
 
-    .hamburger-icon{
-        cursor: pointer;
-        height: 1.5rem; 
-    }
-
     /* Home Page -- Tablet*/
     .home-main{
         flex-direction: column;
@@ -401,7 +396,7 @@ footer{
     .destination-main{
         padding: 1rem;
     }
-    
+
     .destination-nav{
         text-align: center; 
         align-self: center;
@@ -556,6 +551,7 @@ footer{
         margin: 0; 
         text-align: center;
         background-image: url("./assets/home/background-home-mobile.jpg");
+        background-size: cover;
     }
 
     .home-details-div{
@@ -567,18 +563,26 @@ footer{
         font-size: 4rem;
     }
 
+     .home-details-div>h2{
+        margin-bottom: .25rem; 
+    }
+
     .home-details-div>p{
         margin-bottom: 1rem; 
         text-align: center;
     }
 
     .explore-btn{
-        height: 11rem;
-        width: 10rem;
-        min-height: 11rem;
-        min-width: 10rem;
+        height: 10rem;
+        width: 9rem;
+        min-height: 10rem;
+        min-width: 9rem;
         font-size: 1.25rem;
         margin-top: 1rem; 
+    }
+
+    .hamburger-icon{
+        height: 1.75rem;
     }
 
     /* Destination Page -- Mobile*/
@@ -658,4 +662,9 @@ footer{
 .explore-btn:focus-visible {
     outline: 3px solid #ffffff;
     outline-offset: 4px;
+}
+
+/* TEST --remove me! */
+.main-nav-bar-div {
+    background: rgba(255, 0, 0, 0.2);
 }
