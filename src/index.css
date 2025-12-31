@@ -574,9 +574,9 @@ footer{
 
     .explore-btn{
         height: 10rem;
-        width: 9rem;
+        width: 10rem;
         min-height: 10rem;
-        min-width: 9rem;
+        min-width: 10rem;
         font-size: 1.25rem;
         margin-top: 1rem; 
     }
@@ -586,12 +586,28 @@ footer{
     }
 
     /* Destination Page -- Mobile*/
+    .destination-nav{
+        justify-content: center;
+    }
+
     .destination-main{
-        padding: 0 5rem; 
+        padding: 0 2rem; 
     }
    
+    .destination-content-div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        padding: 0; 
+        margin: 0; 
+        text-align: center;
+        gap: 1rem;
+    }
+
     .destination-content-div>div>img{
         width: 12rem;
+        margin: 0 0 1rem 0;
+        
     }
 
     .destination-content-div>div>h1{
@@ -601,19 +617,46 @@ footer{
 
     .destination-content-div>div>h2{
         font-size: 1.25rem;
+        margin: 0 0 2rem 0; 
     }
 
     .destination-details-div{
         width: 100%;
     }
 
+    .destination-details-div>p{
+        text-align: center;
+    }
+
+    .destination-distance-traveltime-div{
+        justify-content: center;
+    }
+
     /* Crew Page -- Mobile*/
+    .crew-main{
+        flex-direction: column;
+        gap: 7rem;
+    }
+    
+    .crew-details-div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+        height: 20%;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
     .crew-details-div>h1{
         font-size: 2rem;
+        margin-top: .25rem;
     }
     
     .crew-details-div>h2{
         font-size: 1.25rem;
+        margin: .75rem;
+        
     }
 
     .crew-details-div>p{
@@ -634,6 +677,23 @@ footer{
     .tech-main{
         min-height: 100vh;
         padding: 0; 
+        
+ 
+    }
+
+    .tech-nav{
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .tech-content-div{
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    .tech-details-div{
+        text-align: center;
+        padding: 0 2rem;
+        
     }
 
     .tech-details-div>div>h1{
@@ -642,6 +702,7 @@ footer{
 
     .tech-details-div>h2, .tech-details-div>div>h2{
         font-size: 1.25rem;
+        margin-bottom: 1.5rem; 
     }
 
     .tech-details-div>div>p{
@@ -649,7 +710,7 @@ footer{
     }
 
     .tech-img{
-        height: 15rem;
+        height: 15rem; 
     }
 
     .tech-nav-links{
