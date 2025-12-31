@@ -397,6 +397,11 @@ footer{
     }
 
     /* Destination Page -- Tablet*/
+
+    .destination-main{
+        padding: 1rem;
+    }
+    
     .destination-nav{
         text-align: center; 
         align-self: center;

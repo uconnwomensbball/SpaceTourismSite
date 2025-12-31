@@ -6,8 +6,9 @@ export default function Crew(){
     const crewFilter = searchParams.get("name") || "hurley"
     const crewData = data.crew
     const filteredCrew = crewData.filter(member=>{
+  
         return crewFilter === member.name.split(" ").pop().toLowerCase()})
-
+console.log("filteredCrew", filteredCrew)
     return (
         <main className="crew-main">
             <div className="crew-details-div">   
@@ -18,24 +19,24 @@ export default function Crew(){
                 <nav className = "crew-nav" aria-label="crew selector">
                     <NavLink 
                         to="?name=hurley" 
-                        className={`crew-nav-links ${filteredCrew === "hurley"? "crew-nav-links-active": null}`} 
+                        className={`crew-nav-links ${crewFilter === "hurley"? "crew-nav-links-active": ""}`} 
                         aria-label="Douglas Hurley" 
-                        aria-current={filteredCrew === "hurley" ? "page" : undefined}></NavLink>
+                        aria-current={crewFilter === "hurley" ? "page" : undefined}></NavLink>
                     <NavLink 
                         to="?name=shuttleworth" 
-                        className={`crew-nav-links ${filteredCrew === "shuttleworth"? "crew-nav-links-active": null}`} 
+                        className={`crew-nav-links ${crewFilter === "shuttleworth"? "crew-nav-links-active": ""}`} 
                         aria-label="Mark Shuttleworth" 
-                        aria-current={filteredCrew === "shuttleworth" ? "page" : undefined}></NavLink>
+                        aria-current={crewFilter === "shuttleworth" ? "page" : undefined}></NavLink>
                     <NavLink 
                         to="?name=glover" 
-                        className={`crew-nav-links ${filteredCrew === "glover"? "crew-nav-links-active": null}`} 
+                        className={`crew-nav-links ${crewFilter === "glover"? "crew-nav-links-active": ""}`} 
                         aria-label="Victor Glover" 
-                        aria-current={filteredCrew === "glover" ? "page" : undefined}></NavLink>
+                        aria-current={crewFilter === "glover" ? "page" : undefined}></NavLink>
                     <NavLink 
                         to="?name=ansari" 
-                        className={`crew-nav-links ${filteredCrew === "ansari"? "crew-nav-links-active": null}`} 
+                        className={`crew-nav-links ${crewFilter === "ansari"? "crew-nav-links-active": ""}`} 
                         aria-label="Anousheh Ansari" 
-                        aria-current={filteredCrew === "ansari" ? "page" : undefined}></NavLink>
+                        aria-current={crewFilter === "ansari" ? "page" : undefined}></NavLink>
                 </nav>
             </div>
             <img className = "crew-img" src={`${filteredCrew[0].images.png}`} alt={`${filteredCrew[0].name}`}/>
