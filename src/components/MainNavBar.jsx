@@ -39,16 +39,20 @@ export default function MainNavBar(){
              {isMobile && isMobileNavBarDisplayed? <img className = "close-mobile-navbar-btn" src="./icon-close.svg" onClick={closeMobileNavBar}/>: null}
                 <NavLink
                     to="/"
-                    className={({isActive}) => `main-nav-bar-links main-nav-bar-links-hover ${isActive? "main-nav-bar-links-active": null}`}><span className="bold">00</span> HOME</NavLink>
+                    className={({isActive}) => `main-nav-bar-links main-nav-bar-links-hover ${isActive? "main-nav-bar-links-active": null}`}
+                    onClick={closeMobileNavBar}><span className="bold">00</span> HOME</NavLink>
                 <NavLink 
                     to="/destination?destination=moon"
-                    className={({isActive}) => `main-nav-bar-links main-nav-bar-links-hover ${isActive? "main-nav-bar-links-active": null}`}><span className="bold">01</span> DESTINATION</NavLink>
+                    className={({isActive}) => `main-nav-bar-links main-nav-bar-links-hover ${isActive? "main-nav-bar-links-active": null}`}
+                    onClick={closeMobileNavBar}><span className="bold">01</span> DESTINATION</NavLink>
                 <NavLink 
                     to="/crew?name=hurley"
-                    className={({isActive}) => `main-nav-bar-links main-nav-bar-links-hover ${isActive? "main-nav-bar-links-active": null}`}><span className="bold">02</span> CREW</NavLink>
+                    className={({isActive}) => `main-nav-bar-links main-nav-bar-links-hover ${isActive? "main-nav-bar-links-active": null}`}
+                    onClick={closeMobileNavBar}><span className="bold">02</span> CREW</NavLink>
                 <NavLink  
                     to="/technology?technology=launchvehicle"
-                    className={({isActive}) => `main-nav-bar-links main-nav-bar-links-hover ${isActive? "main-nav-bar-links-active": null}`}><span className="bold">03</span> TECHNOLOGY</NavLink>
+                    className={({isActive}) => `main-nav-bar-links main-nav-bar-links-hover ${isActive? "main-nav-bar-links-active": null}`}
+                    onClick={closeMobileNavBar}><span className="bold">03</span> TECHNOLOGY</NavLink>
                     
             </div>:null}
              
