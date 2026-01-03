@@ -480,9 +480,6 @@ footer{
     }
 
     /* Technology Page -- Tablet*/
-    .tech-main{
-        min-height: 100vh;
-    }
 
     .tech-content-div{
         flex-direction: column-reverse;
@@ -490,7 +487,7 @@ footer{
         gap: 0;
         margin-top: 8rem; 
         margin-bottom: 3rem; 
-          min-height: 100vh;
+    
     }
 
     .tech-details-div{
