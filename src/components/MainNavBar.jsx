@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 
    //TODO: add accessibility to hamburger icon //
 export default function MainNavBar(){
@@ -27,6 +27,26 @@ export default function MainNavBar(){
         setIsMobileNavBarDisplayed(false)
     }
 
+    const mobileMenuRef = useRef(null)
+
+useEffect(() => {
+    function handleClickOutside(event) {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+        setIsMobileNavBarDisplayed(false)
+      }
+    }
+
+    if (isMobileNavBarDisplayed) {
+      document.addEventListener("mousedown", handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [isMobileNavBarDisplayed])
+
+
+
     return (
         
         <div className="main-nav-bar-div">
@@ -35,7 +55,7 @@ export default function MainNavBar(){
          
             <div className="main-nav-bar-line"></div>
             {isMobileNavBarDisplayed || !isMobile?
-            <div className="main-nav-bar-links-div">
+            <div className="main-nav-bar-links-div" ref={mobileMenuRef}>
              {isMobile && isMobileNavBarDisplayed? <img className = "close-mobile-navbar-btn" src="./icon-close.svg" onClick={closeMobileNavBar}/>: null}
                 <NavLink
                     to="/"
