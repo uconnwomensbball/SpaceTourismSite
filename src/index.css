@@ -447,23 +447,26 @@ footer{
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        gap: 1rem;
+        gap: 0rem;
+        padding-top: 10rem;
     }
 
     .crew-details-div{
-        justify-content: center;
+       
         align-items: center;
         text-align: center; 
-  
+      
         width: 70%;
     }
 
     .crew-details-div>h1{
        font-size: 2.5rem; 
+       
     }
 
     .crew-details-div>h2{
         margin: 0 0 1rem 0; 
+        
     }
 
     .crew-details-div>p{
