@@ -481,7 +481,7 @@ footer{
 
     /* Technology Page -- Tablet*/
     .tech-main{
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .tech-content-div{
