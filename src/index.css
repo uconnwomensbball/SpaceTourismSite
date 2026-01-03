@@ -647,7 +647,7 @@ footer{
     /* Crew Page -- Mobile*/
     .crew-main{
         flex-direction: column;
-        gap: 7rem;
+        gap: 2rem;
        
     }
     
@@ -656,10 +656,10 @@ footer{
         justify-content: center;
         align-items: center;
         text-align: center; 
-        height: 20%;
+       
         width: 100%;
         padding: 0 2rem; 
-        margin-top: 7rem;
+        margin-top: 5.5rem;
     }
 
     .crew-details-div>h1{
