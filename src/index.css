@@ -409,7 +409,7 @@ footer{
         gap: 1.5rem;
         text-align: center;
         margin-top: 4rem;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
       
     }
 
@@ -488,7 +488,8 @@ footer{
         flex-direction: column-reverse;
         text-align: center;
         gap: 0;
-        margin-top: 1rem;  
+        margin-top: 8rem; 
+        margin-bottom: 3rem; 
     }
 
     .tech-details-div{
