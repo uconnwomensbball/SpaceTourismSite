@@ -702,12 +702,13 @@ footer{
     .tech-nav{
         flex-direction: row;
         gap: 2rem;
+        margin-top: 1rem;
         
     }
 
     .tech-content-div{
         flex-direction: column-reverse;
-        gap: 1.5rem;
+        gap: .5rem;
         margin-bottom: 3rem;
         
     }
