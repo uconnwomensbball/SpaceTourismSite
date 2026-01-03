@@ -11,7 +11,7 @@ body{
      font-family: "Bellefair", serif;
      font-weight: 400;
      font-style: normal;
-     height: 100vh; 
+     min-height: 100vh; 
      min-width: 320px; 
 }
 
@@ -233,7 +233,7 @@ footer{
 /*02 CREW*/
 .crew-main{
     background-image: url("./assets/crew/background-crew-desktop.jpg"); 
-    height: 100vh;   
+    min-height: 100vh;   
     background-size: cover;
     display: flex; 
     flex-direction: row;
@@ -279,7 +279,8 @@ footer{
 .tech-main{
     background-image: url("./assets/technology/background-technology-desktop.jpg");
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto; 
     display: flex;
     flex-direction: column;
     justify-content: center;
