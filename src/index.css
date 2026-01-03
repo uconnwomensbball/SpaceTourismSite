@@ -447,14 +447,14 @@ footer{
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        gap: 7rem;
+        gap: 1rem;
     }
 
     .crew-details-div{
         justify-content: center;
         align-items: center;
         text-align: center; 
-        height: 20%;
+      
         width: 70%;
     }
 
@@ -484,7 +484,7 @@ footer{
     .tech-main{
         margin: 0; 
     }
-    
+
     .tech-content-div{
         flex-direction: column-reverse;
         text-align: center;
