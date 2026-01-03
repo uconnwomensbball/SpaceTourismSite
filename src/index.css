@@ -589,7 +589,8 @@ footer{
         min-height: 9rem;
         min-width: 9rem;
         font-size: 1.25rem;
-        margin-top: .5rem; 
+        margin-top: .5rem;
+        margin-bottom: 4rem; 
     }
 
     .hamburger-icon{
