@@ -611,7 +611,7 @@ footer{
         justify-content: center;
         align-items: center; 
         padding: 0; 
-        margin: 6rem 0rem 3rem 0rem; 
+        margin: 6.5rem 0rem 3rem 0rem; 
         text-align: center;
         gap: 1rem;
     }
@@ -734,7 +734,7 @@ footer{
 
     .tech-img{
         height: 15rem;
-        margin-top: 6.5rem; 
+        margin-top: 7rem; 
     }
 
     .tech-nav-links{
