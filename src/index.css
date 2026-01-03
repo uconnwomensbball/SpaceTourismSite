@@ -481,7 +481,10 @@ footer{
     }
 
     /* Technology Page -- Tablet*/
-
+    .tech-main{
+        margin: 0; 
+    }
+    
     .tech-content-div{
         flex-direction: column-reverse;
         text-align: center;
