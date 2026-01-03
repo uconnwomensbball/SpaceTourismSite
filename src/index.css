@@ -408,6 +408,8 @@ footer{
         flex-direction: column; 
         gap: 1.5rem;
         text-align: center;
+        margin-top: 2.5rem;
+      
     }
 
      .destination-content-div>div>h2{
