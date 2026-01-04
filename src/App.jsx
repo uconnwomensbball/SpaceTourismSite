@@ -19,7 +19,6 @@ function App() {
     <BrowserRouter>
       <Routes>
           <Route element={<Layout/>}>
-            <Route path="*" element={<NotFound/>}/>
             <Route path="/" element={<Home/>}/>
             <Route element={<DestLayout/>}>
               <Route path="destination" element={<Destination/>}/>
