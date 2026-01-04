@@ -7,18 +7,17 @@ import CrewLayout from "./components/CrewLayout.jsx"
 import TechLayout from "./components/TechLayout.jsx"
 
 //Pages
-import NotFound from "./pages/404NotFound.jsx"
 import Home from "./pages/Home.jsx"
 import Destination from "./pages/Destination.jsx"
 import Crew from "./pages/Crew.jsx"
 import Technology from "./pages/Technology.jsx"
+import NotFound from "./pages/404NotFound.jsx"
 
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
-    
           <Route element={<Layout/>}>
             <Route path="*" element={<NotFound/>}/>
             <Route path="/" element={<Home/>}/>
@@ -31,7 +30,7 @@ function App() {
             <Route element={<TechLayout/>}>
               <Route path="technology" element={<Technology/>}/>
             </Route>
-    
+            <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

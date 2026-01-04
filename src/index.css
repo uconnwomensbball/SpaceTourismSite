@@ -405,13 +405,11 @@ footer{
     }
 
     .destination-content-div{
-       
         flex-direction: column; 
         gap: 1.5rem;
         text-align: center;
         margin-top: 5rem;
         margin-bottom: 3rem;
-      
     }
 
      .destination-content-div>div>h2{
@@ -452,28 +450,24 @@ footer{
     }
 
     .crew-details-div{
-       
         align-items: center;
         text-align: center; 
-      
         width: 70%;
     }
 
     .crew-details-div>h1{
        font-size: 2.5rem; 
-       
     }
 
     .crew-details-div>h2{
         margin: 0 0 1rem 0; 
-        
     }
 
     .crew-details-div>p{
-         line-height: 1.3;
+        line-height: 1.3;
         font-size: 1.2rem;
-        
-    }
+    } 
+
     .crew-nav{
         margin: 1rem 0 .75rem 0; 
     }
@@ -493,8 +487,6 @@ footer{
         text-align: center;
         gap: 0;
         margin-top: 3rem; 
-        
-    
     }
 
     .tech-details-div{
@@ -619,7 +611,6 @@ footer{
     .destination-content-div>div>img{
         width: 12rem;
         margin: 0 0 1rem 0;
-        
     }
 
     .destination-content-div>div>h1{
@@ -648,7 +639,6 @@ footer{
     .crew-main{
         flex-direction: column;
         gap: 2rem;
-       
     }
     
     .crew-details-div{
@@ -656,11 +646,9 @@ footer{
         justify-content: center;
         align-items: center;
         text-align: center; 
-       
         width: 100%;
         padding: 0 2rem; 
         margin-top: 5.5rem;
-        
     }
 
     .crew-details-div>h1{
@@ -671,7 +659,6 @@ footer{
     .crew-details-div>h2{
         font-size: 1.25rem;
         margin: .75rem;
-        
     }
 
     .crew-details-div>p{
@@ -693,30 +680,24 @@ footer{
 
     /* Technology Page -- Mobile*/
     .tech-main{
-       
         padding: 0; 
-        
- 
     }
 
     .tech-nav{
         flex-direction: row;
         gap: 2rem;
         margin-top: 1rem;
-        
     }
 
     .tech-content-div{
         flex-direction: column-reverse;
         gap: .5rem;
         margin-bottom: 3rem;
-        
     }
 
     .tech-details-div{
         text-align: center;
         padding: 0rem 2rem;
-        
     }
 
     .tech-details-div>div>h1{

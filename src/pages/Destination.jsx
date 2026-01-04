@@ -2,11 +2,11 @@ import { NavLink, useSearchParams } from "react-router-dom"
 import data from "../data.json"
 
 export default function Destination(){
-const [searchParams] = useSearchParams()
-const destinationFilter = searchParams.get("destination") || "moon"
-const destinationsData = data.destinations
-const filteredDestination = destinationsData.filter(destination=>{
-    return destinationFilter === destination.name.toLowerCase()})
+    const [searchParams] = useSearchParams()
+    const destinationFilter = searchParams.get("destination") || "moon"
+    const destinationsData = data.destinations
+    const filteredDestination = destinationsData.filter(destination=>{
+        return destinationFilter === destination.name.toLowerCase()})
 
     return (
         <main className="destination-main">

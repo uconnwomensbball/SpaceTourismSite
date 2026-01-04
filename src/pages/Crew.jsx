@@ -6,9 +6,8 @@ export default function Crew(){
     const crewFilter = searchParams.get("name") || "hurley"
     const crewData = data.crew
     const filteredCrew = crewData.filter(member=>{
-  
         return crewFilter === member.name.split(" ").pop().toLowerCase()})
-console.log("filteredCrew", filteredCrew)
+        
     return (
         <main className="crew-main">
             <div className="crew-details-div">   

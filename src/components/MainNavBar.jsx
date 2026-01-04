@@ -1,21 +1,17 @@
 import { NavLink } from "react-router-dom"
 import { useState, useEffect, useRef } from "react"
 
-   //TODO: add accessibility to hamburger icon //
 export default function MainNavBar(){
     const [isMobile, setIsMobile] = useState(
-        window.innerWidth < 768
-    )
+        window.innerWidth < 768)
 
     const [isMobileNavBarDisplayed, setIsMobileNavBarDisplayed] = useState(false)
 
     useEffect(()=>{
         const handleResize = ()=>{
-            setIsMobile(window.innerWidth < 768)
-        }
+            setIsMobile(window.innerWidth < 768)}
 
         window.addEventListener("resize", handleResize)
-      
     }, [])
     
     function displayNavBar(){
@@ -29,23 +25,17 @@ export default function MainNavBar(){
 
     const mobileMenuRef = useRef(null)
 
-useEffect(() => {
-    function handleClickOutside(event) {
-      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
-        setIsMobileNavBarDisplayed(false)
-      }
-    }
+    useEffect(() => {
+        function handleClickOutside(event) {
+        if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+            setIsMobileNavBarDisplayed(false)}}
 
-    if (isMobileNavBarDisplayed) {
-      document.addEventListener("mousedown", handleClickOutside)
-    }
+        if (isMobileNavBarDisplayed) {
+        document.addEventListener("mousedown", handleClickOutside)}
 
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [isMobileNavBarDisplayed])
-
-
+        return () => {
+        document.removeEventListener("mousedown", handleClickOutside)}
+    }, [isMobileNavBarDisplayed])
 
     return (
         
